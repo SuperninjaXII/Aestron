@@ -1,8 +1,29 @@
 @import 'variables';
 
+$card-initial-width: 80svw;
+$card-initial-height: 40svh;
+
 .card {
+  display: flex;
+  flex-direction: column;
   background: $dark01;
-  width: 80svw;
-  height: 40svh;
+  width: $card-initial-width;
+  height: $card-initial-height;
   border-radius: 3rem;
+
+  .title {
+    height: $card-initial-height/2;
+    width: $card-initial-width;
+
+    p {
+      color: $light01;
+    }
+  }
+
+  button {
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+  }
 }

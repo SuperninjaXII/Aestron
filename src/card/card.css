@@ -1,8 +1,23 @@
 .card {
-  background: #111212;
+  display: flex;
+  flex-direction: column;
+  background: hsl(0, 0%, 7%);
   width: 80svw;
   height: 40svh;
   border-radius: 3rem;
+}
+.card .title {
+  height: 20svh;
+  width: 80svw;
+}
+.card .title p {
+  color: hsl(0, 0%, 92%);
+}
+.card button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=card.css.map */
