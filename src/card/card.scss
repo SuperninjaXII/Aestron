@@ -12,10 +12,13 @@ $card-initial-height: 40svh;
   border-radius: 3rem;
 
   .title {
+    display: flex;
+
     height: $card-initial-height/2;
     width: $card-initial-width;
 
     p {
+      margin: auto;
       color: $light01;
     }
   }

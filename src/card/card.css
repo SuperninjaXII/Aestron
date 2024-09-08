@@ -7,10 +7,12 @@
   border-radius: 3rem;
 }
 .card .title {
+  display: flex;
   height: 20svh;
   width: 80svw;
 }
 .card .title p {
+  margin: auto;
   color: hsl(0, 0%, 92%);
 }
 .card button {
