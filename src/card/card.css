@@ -1,25 +1,81 @@
+.text {
+  font-weight: 290;
+  font-family: sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.1rem;
+  text-rendering: geometricPrecision;
+}
+
+button {
+  margin: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.4rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 1rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   background: hsl(0, 0%, 7%);
-  width: 80svw;
-  height: 40svh;
-  border-radius: 3rem;
+  min-width: 80svw;
+  min-height: 40svh;
+  border-radius: 1.2rem;
+  font-weight: 250;
+  font-family: sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.1rem;
+  text-rendering: geometricPrecision;
 }
 .card .title {
   display: flex;
-  height: 20svh;
-  width: 80svw;
+  padding: 1.2rem;
+  min-height: 20svh;
+  min-width: 80svw;
 }
 .card .title p {
   margin: auto;
   color: hsl(0, 0%, 92%);
 }
 .card button {
-  padding: 1rem;
+  border: 0.2rem hsl(0, 0%, 14%) solid;
+  width: 26.6666666667svw;
+}
+
+.product-card {
+  background: hsl(0, 0%, 7%);
+  width: 80svw;
+  height: 40svh;
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 0%, 92%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.product-card .img {
+  width: 80svw;
+  height: 30svh;
+  background: hsl(0, 0%, 12%);
+}
+.product-card .info {
+  display: flex;
+  flex-direction: column;
+}
+.product-card .info p {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.product-card .info button {
+  margin-left: auto;
+  width: 20svw;
   border: none;
-  border-radius: 1.5rem;
-  font-size: 1rem;
 }
 
 /*# sourceMappingURL=card.css.map */

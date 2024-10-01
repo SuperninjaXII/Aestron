@@ -3,30 +3,94 @@
 $card-initial-width: 80svw;
 $card-initial-height: 40svh;
 
+.text {
+
+  font-weight: 290;
+  font-family: sans-serif;
+  font-size: .98rem;
+  line-height: 1.1rem;
+  text-rendering: geometricPrecision;
+}
+
+button {
+  margin: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.4rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin: 1rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   background: $dark01;
-  width: $card-initial-width;
-  height: $card-initial-height;
-  border-radius: 3rem;
+  min-width: $card-initial-width;
+  min-height: $card-initial-height;
+  border-radius: 1.2rem;
+  font-weight: 250;
+  font-family: sans-serif;
+  font-size: .98rem;
+  line-height: 1.1rem;
+  text-rendering: geometricPrecision;
 
   .title {
     display: flex;
-
-    height: $card-initial-height/2;
-    width: $card-initial-width;
+    padding: 1.2rem;
+    min-height: $card-initial-height/2;
+    min-width: $card-initial-width;
 
     p {
       margin: auto;
       color: $light01;
+
     }
   }
 
   button {
-    padding: 1rem;
-    border: none;
-    border-radius: 1.5rem;
-    font-size: 1rem;
+    border: .2rem $dark03 solid;
+    width: $card-initial-width/3;
   }
+
+
+}
+
+.product-card {
+  background: $dark01;
+  width: $card-initial-width;
+  height: $card-initial-height;
+  display: flex;
+  flex-direction: column;
+  color: $light01;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .img {
+    width: 80svw;
+    height: 30svh;
+    background: $dark02;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 1.2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    button {
+      margin-left: auto;
+      width: $card-initial-width/4;
+      border: none;
+    }
+  }
+
 }
