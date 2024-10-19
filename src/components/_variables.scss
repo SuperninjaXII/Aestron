@@ -1,0 +1,32 @@
+$dark01: hsla(0, 0%, 7%, 1);
+$dark02: hsla(0, 0%, 12%, 1);
+$dark03: hsla(0, 0%, 14%, 1);
+
+$light01: hsla(0, 0%, 92%, 1);
+$light02: hsla(0, 0%, 70%, 1);
+$light03: hsla(0, 0%, 55%, 1);
+$text-color: #fff;
+$btn-radius: .5rem;
+///spacing variables based of fibonaci sequance
+$spacing-base: 1rem; // Base size for spacing
+$fibonacci-limit: 10; // Define how many values in the Fibonacci sequence you want
+$fibonacci-spacing: (
+); // Initialize an empty map to store the spacing values
+
+@function fibonacci($n) {
+  @if $n <=1 {
+    @return $n;
+  }
+
+  @return fibonacci($n - 1)+fibonacci($n - 2);
+}
+
+// Generate Fibonacci map entries up to the specified limit
+@for $i from 0 through $fibonacci-limit {
+  $spacing-value: fibonacci($i) * $spacing-base;
+  $fibonacci-spacing: map-merge($fibonacci-spacing, (spacing-#{$i}: $spacing-value));
+}
+
+// Example usage of the map values:
+// You can access the values with `map-get($fibonacci-spacing, spacing-0)`
+// or use them directly in your SCSS rules.

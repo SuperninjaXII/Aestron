@@ -1,0 +1,14 @@
+button {
+  background: none;
+  border: none;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+button:hover {
+  border: 0.1rem solid hsl(0, 0%, 92%);
+}
+
+/*# sourceMappingURL=buttons.css.map */

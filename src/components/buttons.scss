@@ -1,0 +1,14 @@
+@import "variables";
+
+button {
+  background: none;
+  border: none;
+  margin: map-get($fibonacci-spacing, spacing-2);
+  padding: map-get($fibonacci-spacing, spacing-2);
+  border-radius: $btn-radius;
+  color: $text-color;
+}
+
+button:hover {
+  border: .1rem solid $light01;
+}

@@ -3,6 +3,10 @@
 $card-initial-width: 80svw;
 $card-initial-height: 40svh;
 
+body {
+  background: #000;
+}
+
 .text {
 
   font-weight: 290;
@@ -12,18 +16,6 @@ $card-initial-height: 40svh;
   text-rendering: geometricPrecision;
 }
 
-button {
-  margin: auto;
-  padding: 1rem;
-  border: none;
-  border-radius: 1.4rem;
-  font-size: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  margin: 1rem;
-}
 
 .card {
   display: flex;
@@ -89,7 +81,6 @@ button {
     button {
       margin-left: auto;
       width: $card-initial-width/4;
-      border: none;
     }
   }
 
