@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="
       ../components/buttons.css
       ">
+  <link rel="stylesheet" href="../animations/animation.css" preload>
 </head>
 
 <body class="dark-theme">
@@ -32,11 +33,11 @@
 
   </div>
   <section>
-    <button>hello</button>
+    <button anime-action="scale-out">hello</button>
   </section>
   <script src="eruda.js"></script>
   <script>eruda.init();</script>
-  <script src="../js/morph.js"></script>
+  <script type="module" src="../js/animationEngine.js"></script>
 </body>
 
 </html>
