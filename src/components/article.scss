@@ -1,0 +1,17 @@
+article {
+  background: $dark02;
+  padding: map-get($fibonacci-spacing, spacing-2);
+  border-radius: 10pt;
+}
+
+article h1 {
+
+  color: $light01;
+  font-size: map-get($fibonacci-spacing, spacing-4);
+}
+
+article p {
+  color: $light02;
+  font-style: italic;
+  font-size: map-get($fibonacci-spacing, spacing-3);
+}

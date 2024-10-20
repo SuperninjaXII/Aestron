@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 22 |   background: $dark01;
- *    |               ^^^^^^^
+ * 13 |     color: $light02;
+ *    |            ^^^^^^^^
  *    '
- *   components/card.scss 22:15  root stylesheet */
+ *   components/modal.scss 13:12  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 22 \2502    background: $dark01;\a    \2502                ^^^^^^^\a    \2575 \a   components/card.scss 22:15  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502      color: $light02;\a    \2502             ^^^^^^^^\a    \2575 \a   components/modal.scss 13:12  root stylesheet";
 }

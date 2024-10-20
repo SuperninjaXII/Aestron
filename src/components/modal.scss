@@ -1,0 +1,27 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-content {
+    color: $light02;
+    background: $dark01;
+    padding: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0 0.4rem .8rem rgba(0, 0, 0, 0.1);
+    width: 80svw;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+}

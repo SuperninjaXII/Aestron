@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 $dark01: hsla(0, 0%, 7%, 1);
 $dark02: hsla(0, 0%, 12%, 1);
 $dark03: hsla(0, 0%, 14%, 1);
@@ -8,7 +10,7 @@ $light03: hsla(0, 0%, 55%, 1);
 $text-color: #fff;
 $btn-radius: .5rem;
 ///spacing variables based of fibonaci sequance
-$spacing-base: 1rem; // Base size for spacing
+$spacing-base: .5rem; // Base size for spacing
 $fibonacci-limit: 10; // limit
 $fibonacci-spacing: (
 ); // Initialized an empty map 
@@ -25,4 +27,13 @@ $fibonacci-spacing: (
 @for $i from 0 through $fibonacci-limit {
   $spacing-value: fibonacci($i) * $spacing-base;
   $fibonacci-spacing: map-merge($fibonacci-spacing, (spacing-#{$i}: $spacing-value));
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: all .21s ease-in;
+
 }

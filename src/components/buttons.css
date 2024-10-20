@@ -1,14 +1,17 @@
-button {
-  background: none;
-  border: none;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  color: #fff;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 4 |   margin: map-get($fibonacci-spacing, spacing-2);
+ *   |                   ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   components/buttons.scss 4:19  root stylesheet */
 
-button:hover {
-  border: 0.1rem solid hsl(0, 0%, 92%);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 4 \2502    margin: map-get($fibonacci-spacing, spacing-2);\a   \2502                    ^^^^^^^^^^^^^^^^^^\a   \2575 \a   components/buttons.scss 4:19  root stylesheet";
 }
-
-/*# sourceMappingURL=buttons.css.map */
