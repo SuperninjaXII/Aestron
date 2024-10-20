@@ -1,71 +1,66 @@
-// Styling for the article element
-article {
-  background: $dark02;
-  padding: map-get($fibonacci-spacing, spacing-2);
-  border-radius: 10pt;
-}
+// Base styling for text elements
 
-// Styling for h1 inside article
-article h1 {
+// Styling for h1
+h1 {
   color: $light01;
   font-size: map-get($fibonacci-spacing, spacing-4);
   margin-bottom: map-get($fibonacci-spacing, spacing-1);
 }
 
-// Styling for h2 inside article
-article h2 {
+// Styling for h2
+h2 {
   color: $light01;
   font-size: map-get($fibonacci-spacing, spacing-3);
   margin-bottom: map-get($fibonacci-spacing, spacing-1);
 }
 
-// Styling for h3 inside article
-article h3 {
+// Styling for h3
+h3 {
   color: $light01;
   font-size: map-get($fibonacci-spacing, spacing-2);
   margin-bottom: map-get($fibonacci-spacing, spacing-1);
 }
 
-// Styling for paragraphs inside article
-article p {
+// Styling for paragraphs
+p {
   color: $light02;
   font-style: italic;
   font-size: map-get($fibonacci-spacing, spacing-3);
   margin-bottom: map-get($fibonacci-spacing, spacing-1);
 }
 
-// Styling for h4 inside article
-article h4 {
+// Styling for h4
+h4 {
   color: $light01;
   font-size: map-get($fibonacci-spacing, spacing-1);
   margin-bottom: map-get($fibonacci-spacing, spacing-1);
 }
 
-// Styling for h5 inside article
-article h5 {
+// Styling for h5
+h5 {
   color: $light01;
   font-size: map-get($fibonacci-spacing, spacing-0);
   margin-bottom: map-get($fibonacci-spacing, spacing-1);
 }
 
-// Styling for h6 inside article
-article h6 {
+// Styling for h6
+h6 {
   color: $light01;
   font-size: map-get($fibonacci-spacing, spacing-0);
   font-weight: bold;
   margin-bottom: map-get($fibonacci-spacing, spacing-1);
 }
 
-// Styling for small text inside article
-article small {
+// Styling for small text
+small {
   color: $light03;
   font-size: map-get($fibonacci-spacing, spacing-0);
   display: block;
   margin-top: map-get($fibonacci-spacing, spacing-0);
 }
 
-// Styling for blockquote inside article
-article blockquote {
+// Styling for blockquote
+blockquote {
   color: $light01;
   font-style: italic;
   border-left: 4px solid $light01;
@@ -74,8 +69,8 @@ article blockquote {
   font-size: map-get($fibonacci-spacing, spacing-2);
 }
 
-// Styling for code inside article
-article code {
+// Styling for inline code
+code {
   background: $dark01;
   color: $light02;
   padding: map-get($fibonacci-spacing, spacing-0);

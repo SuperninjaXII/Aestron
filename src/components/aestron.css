@@ -16,16 +16,73 @@ article {
 article h1 {
   color: hsl(0, 0%, 92%);
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article h2 {
+  color: hsl(0, 0%, 92%);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+article h3 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 article p {
   color: hsl(0, 0%, 70%);
   font-style: italic;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+article h4 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article h5 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+article h6 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+article small {
+  color: hsl(0, 0%, 55%);
+  font-size: 0rem;
+  display: block;
+  margin-top: 0rem;
+}
+
+article blockquote {
+  color: hsl(0, 0%, 92%);
+  font-style: italic;
+  border-left: 4px solid hsl(0, 0%, 92%);
+  padding-left: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.5rem;
+}
+
+article code {
+  background: hsl(0, 0%, 7%);
+  color: hsl(0, 0%, 70%);
+  padding: 0rem;
+  border-radius: 4px;
+  font-family: monospace;
 }
 
 button {
-  background: none;
+  background: hsl(0, 0%, 14%);
   border: none;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -131,6 +188,115 @@ button:hover {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form .form-group label {
+  margin-bottom: 0.5rem;
+}
+.form .form-group input,
+.form .form-group textarea,
+.form .form-group select {
+  padding: 0.5rem;
+  border: 0.1rem solid hsl(0, 0%, 70%);
+  border-radius: 0.4rwm;
+  transition: border-color 0.3s ease;
+}
+.form .form-group input:focus,
+.form .form-group textarea:focus,
+.form .form-group select:focus {
+  border-color: hsl(0, 0%, 7%);
+}
+.form .form-actions {
+  display: flex;
+  gap: 1rem;
+}
+.form .form-actions .btn-submit {
+  background: hsl(0, 0%, 14%);
+  color: hsl(0, 0%, 92%);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.form .form-actions .btn-submit:hover {
+  background: hsl(0, 0%, 12%);
+}
+
+h1 {
+  color: hsl(0, 0%, 92%);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: hsl(0, 0%, 92%);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: hsl(0, 0%, 70%);
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  color: hsl(0, 0%, 92%);
+  font-size: 0rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+small {
+  color: hsl(0, 0%, 55%);
+  font-size: 0rem;
+  display: block;
+  margin-top: 0rem;
+}
+
+blockquote {
+  color: hsl(0, 0%, 92%);
+  font-style: italic;
+  border-left: 4px solid hsl(0, 0%, 92%);
+  padding-left: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.5rem;
+}
+
+code {
+  background: hsl(0, 0%, 7%);
+  color: hsl(0, 0%, 70%);
+  padding: 0rem;
+  border-radius: 4px;
+  font-family: monospace;
 }
 
 .scale-out-center {

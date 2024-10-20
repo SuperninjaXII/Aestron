@@ -37,12 +37,42 @@
         minima. Nemo.
       </p>
     </article>
-    <div class="modal">
+    <!-- <div class="modal">
       <div class="modal-content">
         <div class="modal-close">X</div>
         <h1>hello</h1>
       </div>
     </div>
+-->
+    <form class="form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="general">General</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+    </form>
   </section>
   <script src="eruda.js"></script>
   <script>eruda.init();</script>
