@@ -1,9 +1,4 @@
 button {
-  background: var(--primary400);
-  padding-inline: var(--space-md);
-  padding-block: var(--space-xs);
+  background: ghostwhite;
   border: none;
-  border-radius: var(--radius-sm);
-  font-size: var(--font-md);
-  color: var(--primary900);
 }
